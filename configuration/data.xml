@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ENVIROMENT>
+    <!-- General -->
+    <WaitTime>5</WaitTime>
+    <PageTitle>איסתא - אתר התיירות הגדול בישראל</PageTitle>
+
+    <CSV_location>D:/Automation/Homework/ddt/users.csv</CSV_location>
+    <ScreenshotPath>D:/Automation/Homework/allure-screen-shots/</ScreenshotPath>
+    <Browser>Chrome</Browser>
+    <Url>https://www.issta.co.il/</Url>
+
+     <!-- Passengers Detail-->
+    <FirstName>David</FirstName>
+    <Email>King</Email>    <FirstName>admin</FirstName>
+    <Phone>0547654321</Phone>
+    <Email>testing@gmail.com</Email>    <FirstName>admin</FirstName>
+    <Gender>admin</Gender>
+    <Birthday>01/01/2000</Birthday>
+
+      <!-- Credit Card Details -->
+    <CardNumber>admin</CardNumber>
+    <ID>admin</ID>    <FirstName>admin</FirstName>
+    <ExpireYear>admin</ExpireYear>
+    <ExpireMonth>admin</ExpireMonth>
+    <CVV>admin</CVV>    <FirstName>admin</FirstName>
+    <Phone>admin</Phone>
+    <ErrorMessage>חברות האשראי לא אישרו את העסקה, אנא נסו לשלם באמצעות כרטיס אחר</ErrorMessage>
+
+    <!-- Extra-->
+    <Excute_Applitools>no</Excute_Applitools>   <!-- yes/no -->
+    <Applitools_Key>R56QvFMfszYdxeTCK2D6uS4qCCbSugQ98jNQ73bw8ZG8110</Applitools_Key>
+
+</ENVIROMENT>
