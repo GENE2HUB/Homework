@@ -1,8 +1,9 @@
 from selenium.webdriver.common.by import By
 
 # Issta Home Page Title > flight with hotel - search table  elements
-destination = (By.XPATH,"//*[@id='search_dynamic_packages']/se-abroad-dynamic-packages-form/form/div[1]/div[2]/div[1]")
-destination = (By.XPATH,"//*[@id='search_dynamic_packages']/se-abroad-dynamic-packages-form/form/div[1]/div[2]/div[2]")
+destination = (By.XPATH,"//*[@id='search_dynamic_packages']/se-abroad-dynamic-packages-form/form/div[1]/div[1]/div/div/div[2]")
+#destination = (By.XPATH,"//*[@id='search_dynamic_packages']/se-abroad-dynamic-packages-form/form/div[1]/div[2]/div[2]")
+#//*[@id='search_dynamic_packages']/se-abroad-dynamic-packages-form/form/div[1]/div[1]/div/div/div[2]
 open_calendar = (By.XPATH,"//*[@id='start_date']")
 current_month = (By.ID, "//table[@class='month1 current']/tbody/tr/td/div[@class='day toMonth  valid']/span[@class='day-number'")
 next_month = (By.ID, "//*[@id='search_dynamic_packages']/se-abroad-dynamic-packages-form/form/div[1]/div[2]/div[1]/desktop-se-datepicker/div/div[3]/div[1]/div/div[2]")

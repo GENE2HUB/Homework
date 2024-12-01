@@ -6,6 +6,7 @@ payment_id = (By.XPATH,"//*[@id='payment_modal']")
 payment_year = (By.XPATH,"//*[@id='payment_modal']")
 payment_month = (By.XPATH,"//*[@id='payment_modal']")
 payment_card_cvv = (By.XPATH,"//*[@id='payment_modal']")
+submit_button = (By.XPATH,"//*[@id='btOk']")
 
 class PaymentPage:
     # initiation Constructor - get driver from
@@ -27,3 +28,5 @@ class PaymentPage:
 
     def get_payment_card_cvv(self):
         return self.driver.find_element(payment_card_cvv[0],payment_card_cvv[1])
+    def get_submit_button(self):
+        return self.driver.find_element(submit_button[0],submit_button[1])

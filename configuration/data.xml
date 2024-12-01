@@ -11,23 +11,18 @@
 
      <!-- Passengers Detail-->
     <FirstName>David</FirstName>
-    <Email>King</Email>    <FirstName>admin</FirstName>
+    <lastName>King</lastName>
     <Phone>0547654321</Phone>
-    <Email>testing@gmail.com</Email>    <FirstName>admin</FirstName>
-    <Gender>admin</Gender>
+    <Email>testing@gmail.com</Email>
+    <Gender>Male</Gender>
     <Birthday>01/01/2000</Birthday>
 
       <!-- Credit Card Details -->
-    <CardNumber>admin</CardNumber>
-    <ID>admin</ID>    <FirstName>admin</FirstName>
-    <ExpireYear>admin</ExpireYear>
-    <ExpireMonth>admin</ExpireMonth>
-    <CVV>admin</CVV>    <FirstName>admin</FirstName>
-    <Phone>admin</Phone>
+    <CardNumber>4850485048504850</CardNumber>
+    <ID>999999196</ID>
+    <ExpireYear>2030</ExpireYear>
+    <ExpireMonth>01</ExpireMonth>
+    <CVV>987</CVV>
     <ErrorMessage>חברות האשראי לא אישרו את העסקה, אנא נסו לשלם באמצעות כרטיס אחר</ErrorMessage>
-
-    <!-- Extra-->
-    <Excute_Applitools>no</Excute_Applitools>   <!-- yes/no -->
-    <Applitools_Key>R56QvFMfszYdxeTCK2D6uS4qCCbSugQ98jNQ73bw8ZG8110</Applitools_Key>
 
 </ENVIROMENT>

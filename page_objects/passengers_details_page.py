@@ -7,26 +7,19 @@ Ordering_details_last_name = (By.XPATH, "//*[@id='checkout-last-name']")
 Ordering_details_email = (By.XPATH, "//*[@id='checkout-email']")
 Ordering_details_phone = (By.XPATH, "//*[@id='checkout-phone']")
 Ordering_details_button = (By.XPATH, "//*[@id='customer_info_form']/div[2]/button")
-
-
 passenger_first_name = (By.XPATH, "//*[@id='presonalDetailsForm']/div[1]/div/div[1]/div/div[2]/div[1]/div[1]")
 passenger_last_name = (By.XPATH, "//*[@id='presonalDetailsForm']/div[1]/div/div[1]/div/div[2]/div[1]/div[2]")
 passenger_email = (By.XPATH, "//*[@id='presonalDetailsForm']/div[1]/div/div[1]/div/div[2]/div[1]/div[3]")
 passenger_phone = (By.XPATH, "//*[@id='presonalDetailsForm']/div[1]/div/div[1]/div/div[2]/div[1]/div[4]")
-
 passenger_with_Handy_suitcase = (
-By.XPATH, "//*[@id='presonalDetailsForm']/div[1]/div/div[1]/div/div[2]/div[2]/div/div[4]/div[2]/div[2]")
+    By.XPATH, "//*[@id='presonalDetailsForm']/div[1]/div/div[1]/div/div[2]/div[2]/div/div[4]/div[2]/div[2]")
 passenger_without_Handy_suitcase = (
-By.XPATH, "//*[@id='presonalDetailsForm']/div[1]/div/div[1]/div/div[2]/div[2]/div/div[6]/div[2]/div[1]")
-
+    By.XPATH, "//*[@id='presonalDetailsForm']/div[1]/div/div[1]/div/div[2]/div[2]/div/div[6]/div[2]/div[1]")
 passenger_with_suitcase = (
-By.XPATH, "//*[@id='presonalDetailsForm']/div[1]/div/div[1]/div/div[2]/div[2]/div/div[4]/div[2]/div[2]")
+    By.XPATH, "//*[@id='presonalDetailsForm']/div[1]/div/div[1]/div/div[2]/div[2]/div/div[4]/div[2]/div[2]")
 passenger_without_suitcase = (
-By.XPATH, "//*[@id='presonalDetailsForm']/div[1]/div/div[1]/div/div[2]/div[2]/div/div[4]/div[2]/div[1]")
-
-passenger_sumit_button = (
-By.XPATH, "//*[@id='presonalDetailsForm']/div[2]/button")
-
+    By.XPATH, "//*[@id='presonalDetailsForm']/div[1]/div/div[1]/div/div[2]/div[2]/div/div[4]/div[2]/div[1]")
+passenger_sumit_button = (By.XPATH, "//*[@id='presonalDetailsForm']/div[2]/button")
 
 #Payment table
 payment_first_name = (By.XPATH, "//*[@id='payment_step_details']/div[3]/div[2]/div/div[1]")
@@ -52,25 +45,25 @@ class PassengersDetailsPage:
         # initiation the driver
         self.driver = driver
 
-    def get_Ordering_details_table(self):
+    def get_ordering_details_table(self):
         return self.driver.find_element(Ordering_details_table[0], Ordering_details_table[1])
 
-    def get_Ordering_details_first_name(self):
+    def get_ordering_details_first_name(self):
         return self.driver.find_element(Ordering_details_first_name[0], Ordering_details_first_name[1])
 
-    def get_Ordering_details_last_name(self):
+    def get_ordering_details_last_name(self):
         return self.driver.find_element(Ordering_details_last_name[0], Ordering_details_last_name[1])
 
-    def get_Ordering_details_email(self):
+    def get_ordering_details_email(self):
         return self.driver.find_element(Ordering_details_email[0], Ordering_details_email[1])
 
-    def get_Ordering_details_phone(self):
+    def get_ordering_details_phone(self):
         return self.driver.find_element(Ordering_details_phone[0], Ordering_details_phone[1])
 
-    def get_Ordering_details_button(self):
+    def get_ordering_details_button(self):
         return self.driver.find_element(Ordering_details_button[0], Ordering_details_button[1])
 
-# Passengers Info
+    # Passengers Info
     def get_passenger_first_name(self):
         return self.driver.find_element(passenger_first_name[0], passenger_first_name[1])
 
@@ -83,10 +76,10 @@ class PassengersDetailsPage:
     def get_passenger_phone(self):
         return self.driver.find_element(passenger_phone[0], passenger_phone[1])
 
-    def get_passenger_with_Handy_suitcase(self):
+    def get_passenger_with_handy_suitcase(self):
         return self.driver.find_element(passenger_first_name[0], passenger_first_name[1])
 
-    def get_passenger_without_Handy_suitcase(self):
+    def get_passenger_without_handy_suitcase(self):
         return self.driver.find_element(passenger_last_name[0], passenger_last_name[1])
 
     def get_passenger_with_suitcase(self):
@@ -97,7 +90,6 @@ class PassengersDetailsPage:
 
     def get_passenger_sumit_button(self):
         return self.driver.find_element(passenger_sumit_button[0], passenger_sumit_button[1])
-
 
     def get_vip_service(self):
         return self.driver.find_element(vip_service[0], vip_service[1])

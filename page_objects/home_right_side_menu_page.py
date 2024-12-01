@@ -20,11 +20,11 @@ class HomeRightSideMenu:
     def get_right_side_menu(self):
         return self.driver.find_element(right_side_menu[0],right_side_menu[1])
 
-    def get_flight(self):
-        return self.driver.find_element(flight[0],flight[1])
-
     def get_flight_and_hotel(self):
         return self.driver.find_element(flight_and_hotel[0],flight_and_hotel[1])
+
+    def get_flight(self):
+        return self.driver.find_element(flight[0],flight[1])
 
     def get_vacation_in_israel(self):
         return self.driver.find_element(vacation_in_israel[0],vacation_in_israel[1])

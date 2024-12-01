@@ -19,7 +19,6 @@ search_results = None
 payment_page = None
 passengers_details = None
 
-
 class ManagePages:
     @staticmethod
     def init_web_pages():
@@ -29,8 +28,5 @@ class ManagePages:
         globals()['flight_only'] = HomeFlightOnlyPage(conf.driver)
         globals()['flight_details'] = FlightDetailsPage(conf.driver)
         globals()['search_results'] = SearchResultsPage(conf.driver)
-        globals()['payment_page'] = PaymentPage(conf.driver)
         globals()['passengers_details'] = PassengersDetailsPage(conf.driver)
-
-
-
+        globals()['payment_page'] = PaymentPage(conf.driver)
