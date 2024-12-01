@@ -12,8 +12,9 @@ class Test_Issta_Web_Site:
         WebFlows.open_search_flight_only_table_flow()
         WebFlows.insert_data_to_search_flight_only_table_flow()
 
-    def test_search_flight_with_hotel(self):
-        WebFlows.insert_data_to_flight_with_hotel_table_flow()
+    def test_select_flight(self):
+        WebFlows.search_result_page_flow()
+        WebFlows.flight_details_flow()
 
     def test_passengers_detail_page(self):
         WebFlows.passengers_ordering_details_flow()
@@ -21,6 +22,10 @@ class Test_Issta_Web_Site:
         WebFlows.passengers_additional_service_flow()
         WebFlows.flight_payment_detail_flow()
         WebFlows.flight_payment_flow()
+
+    def test_search_flight_with_hotel(self):
+        WebFlows.insert_data_to_flight_with_hotel_table_flow()
+
 
 
 

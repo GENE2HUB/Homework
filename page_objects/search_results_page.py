@@ -3,6 +3,7 @@ from selenium.webdriver.common.by import By
 # elements used in tests
 search_results_title = (By.XPATH,"//*[@id='all-flights-tab']/section/div[1]/div")
 sort_cheap_price = (By.XPATH,"//*[@id='sort_tabs']/ul/li[1]")
+flight_detail = (By.XPATH,"//*[@id='all-flights-tab']/section/div[3]/div[1]/div[1]/div[1]/section[2]/div/div[4]/a")
 flight_list_items = (By.XPATH,"//*[@id='all-flights-tab']/section/div[3]")
 first_flight = (By.XPATH, "//*[@id='all-flights-tab']/section/div[3]/div[1]")
 flight_price = (By.XPATH, "//*[@id='all-flights-tab']/section/div[3]/div[1]/div/section[2]/div/div[2]")
@@ -81,9 +82,13 @@ class SearchResultsPage:
             return self.driver.find_elements(flight_list_items[0], flight_list_items[1])
 
     def get_first_flight(self):
-        return self.driver.find_element(first_flight [0], first_flight [1])
+        return self.driver.find_element(first_flight[0], first_flight[1])
+
+    def get_flight_detail(self):
+        return self.driver.find_element(flight_detail[0], flight_detail[1])
 
     def get_search_results_title(self):
+
         return self.driver.find_element(search_results_title[0],search_results_title[1])
 
     def get_flight_title(self):
@@ -93,7 +98,7 @@ class SearchResultsPage:
         return self.driver.find_element(sort_cheap_price[0],sort_cheap_price[1])
 
     def get_flight_price (self):
-        return self.driver.find_element(flight_price [0], flight_price [1])
+        return self.driver.find_element(flight_price[0], flight_price[1])
 
     def get_flight_price_and_element(self, locator):
         """
@@ -106,20 +111,9 @@ class SearchResultsPage:
         #element = self.driver.find_element(*locator)
         price_text = flight_price.text
         price = float(price_text.replace("$", "").replace(",", ""))
-        return self.driver.find_element(flight_price [0], flight_price [1]), price
-
-    def validate_search_results(self):
-        num_of_results = self.driver.find_elements(*self.search_results_table)
-        if not results:
-            print("No search results. Returning to the previous page to update parameters.")
-            self.driver.back()
-            return False
-        else:
-            price = self.driver.find_element(*self.flight_price).text
-            return float(price.replace("$", ""))
+        return self.driver.find_element(flight_price[0], flight_price[1]), price
 
 """
-
     def get_search_update_button(self):
         return self.driver.find_element(search_update_button[0],search_update_button[1])
 

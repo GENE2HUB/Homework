@@ -43,7 +43,9 @@ class WebFlows:
 
     @staticmethod
     def search_result_page_flow():
-        page.SearchResultsPage.get_sort_cheap_price()
+        UiActions.click(page.SearchResultsPage.get_flight_detail())
+        UiActions.click(page.SearchResultsPage.get_first_flight())
+        UiActions.click(page.FlightDetailsPage.get_continue_field())
 
     @staticmethod
     def flight_details_flow():
